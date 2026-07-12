@@ -100,4 +100,4 @@ This project is shared for educational purposes.
 
 ## 👨‍💻 Author
 
-Alpha
+Jawad Jamshed
