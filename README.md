@@ -2,13 +2,13 @@
 
 A Cisco Packet Tracer project demonstrating the implementation of **Static Routing** using Cisco IOS. This lab focuses on manually configuring routes between multiple routers to enable communication across different networks.
 
-## 📌 Project Overview
+##  Project Overview
 
 Static Routing is one of the fundamental routing techniques used in computer networks. In this project, three routers (R1, R2, R3) are interconnected through serial links, and static routes are manually configured to establish end-to-end connectivity between all LANs across the network.
 
 This project is designed for students learning CCNA, computer networking, and Cisco router configuration.
 
-## 🎯 Objectives
+##  Objectives
 
 - Configure IPv4 addressing on routers and end devices
 - Configure static routes on Cisco routers
@@ -16,20 +16,14 @@ This project is designed for students learning CCNA, computer networking, and Ci
 - Test end-to-end connectivity using Ping and Traceroute
 - Understand how manually configured routes work
 
-## 🖥️ Network Topology
+##  Network Topology
 
 ![Network Topology](topology.png)
 
 R1 and R2 are connected via a serial link (`10.0.0.0/24`), and R2 and R3 are connected via a second serial link (`10.0.1.0/24`). R1 and R3 each host two LAN segments, while R2 hosts one LAN segment.
 
-```
-[LAN1]---[LAN2]---R1====R2---[LAN5]
-                        ‖
-                        R3---[LAN3]
-                         \--[LAN4]
-```
 
-## 🌐 IP Addressing Table
+##  IP Addressing Table
 
 | Router | Interface     | IP Address    | Subnet Mask     | Connects To |
 |--------|---------------|---------------|------------------|-------------|
@@ -44,7 +38,7 @@ R1 and R2 are connected via a serial link (`10.0.0.0/24`), and R2 and R3 are con
 | R3     | Gi0/1         | 192.168.4.1   | 255.255.255.0    | LAN 2       |
 | R3     | Serial0/1/1   | 10.0.1.1      | 255.255.255.0    | R2          |
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 networking-static-routing/
@@ -59,7 +53,7 @@ networking-static-routing/
     └── R3.txt
 ```
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - Cisco Packet Tracer
 - Cisco IOS
@@ -67,14 +61,14 @@ networking-static-routing/
 - Static Routing
 - Serial Communication
 
-## 🚀 How to Use
+##  How to Use
 
 1. Clone or download this repository
 2. Open `static-routing.pkt` using Cisco Packet Tracer
 3. Review each router configuration inside the `configs` folder
 4. Verify routing using Cisco IOS commands
 
-## ✅ Verification Commands
+##  Verification Commands
 
 ```bash
 show ip route
@@ -84,7 +78,7 @@ ping
 traceroute
 ```
 
-## 📖 Learning Outcomes
+##  Learning Outcomes
 
 After completing this lab, you should be able to:
 
@@ -94,10 +88,10 @@ After completing this lab, you should be able to:
 - Troubleshoot routing issues
 - Understand manual path selection
 
-## 📄 License
+##  License
 
 This project is shared for educational purposes.
 
-## 👨‍💻 Author
+##  Author
 
 Jawad Jamshed
